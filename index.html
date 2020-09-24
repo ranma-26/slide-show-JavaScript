@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web制作課題1</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body class="c-block">
+  <div class="l-header">
+    <div class="p-header">
+      <img id="mypng" class="p-header" src="css/img/header.png" alt="背景画像">
+      <img id="mypng-smh" class="p-header--smh" src="css/img/header-mini.png" alt="背景画像">
+      <div class="p-header__top">
+        <header class="p-header__title">いろは</header>
+        <span class="material-icons" id="p-header__icon">menu</span>
+        <!-- 常時表示メニュー一覧 -->
+        <nav class="p-header__home">
+          <ul >
+            <li class="p-header__list"><a class="p-header__list-about" href="#">About iroha</a></li>
+            <li class="p-header__list"><a class="p-header__list-lodge" href="#">Lodge</a></li>
+            <li class="p-header__list"><a class="p-header__list-food" href="#">Food Atelier<br>& Lounge</a></li>
+            <li class="p-header__list"><a class="p-header__list-interactive" href="#">Interactive<br>Program</a></li>
+            <li class="p-header__list"><a class="p-header__list-booking" href="#">Booking</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="p-header__logo"></div>
+    </div>
+    <!-- 隠れたメニュー表示 -->
+    <div class="p-hidden">
+      <span class="material-icons" id="p-hidden__closeicon">close</span>
+      <i class="fab fa-facebook-f" id="p-hidden__facebookicon"></i>
+      <i class="fab fa-instagram" id="p-hidden__instagramicon"></i>
+    <nav class="p-hidden__home">
+      <ul>
+        <li class="p-hidden__list"><a class="p-hidden__list-about" href="#">About iroha</a></li>
+        <li class="p-hidden__list"><a class="p-hidden__list-lodge" href="#">Lodge</a></li>
+        <li class="p-hidden__list"><a class="p-hidden__list-food" href="#">Food Atelier<br>& Lounge</a></li>
+        <li class="p-hidden__list"><a class="p-hidden__list-interactive" href="#">Interactive<br>Program</a></li>
+        <li class="p-hidden__list"><a class="p-hidden__list-booking" href="#">Booking</a></li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+  </div>
+  <script src="sass/js/main.js"></script>
+</body>
+</html>
