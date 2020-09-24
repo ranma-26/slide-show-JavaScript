@@ -1,0 +1,646 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.l-header {
+  position: relative;
+}
+
+.c-block {
+  margin: 0;
+  padding: 0;
+}
+
+.p-header {
+  width: 100vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+  font-family: "凸版文久見出し明朝";
+}
+
+.p-header__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000B3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 12vmin;
+  width: 100%;
+}
+
+.p-header__logo {
+  position: absolute;
+  top: 20vw;
+  left: 30vw;
+  background-image: url(img/logo-white.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 50vh;
+}
+
+.p-header__title {
+  color: #fff;
+  font-size: 3.0vmin;
+  letter-spacing: 0.3vmin;
+  line-height: 0.5;
+  margin-top: 3.0vmin;
+  margin-left: 3.0vmin;
+}
+
+.p-header__title::before {
+  content: "\A暮らしの体験宿";
+  font-size: 1.75vmin;
+  padding-right: 1.0vmin;
+  letter-spacing: 0.2vmin;
+}
+
+.p-header__title::after {
+  content: "\A-Yakushima Lodge& Food Atelier-";
+  white-space: pre;
+  font-size: 1.15vmin;
+  letter-spacing: 0.2vmin;
+  line-height: 3.5vmin;
+}
+
+.p-header__home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-header__list {
+  list-style: none;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding-right: 3.0vmin;
+}
+
+.p-header__list-about {
+  color: #fff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  white-space: normal;
+  font-size: 1.75vmin;
+  letter-spacing: 0.1vmin;
+  line-height: 1.2;
+}
+
+.p-header__list-about::after {
+  content: "\A-いろはのこと-";
+  white-space: pre;
+  letter-spacing: 0.1vmin;
+  font-size: 1.05vmin;
+}
+
+.p-header__list-lodge {
+  color: #fff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  white-space: normal;
+  font-size: 1.75vmin;
+  letter-spacing: 0.1vmin;
+  line-height: 1.2;
+}
+
+.p-header__list-lodge::after {
+  content: "\A-宿泊ロッジ-";
+  white-space: pre;
+  letter-spacing: 0.1vmin;
+  font-size: 1.05vmin;
+}
+
+.p-header__list-food {
+  color: #fff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  white-space: normal;
+  font-size: 1.75vmin;
+  letter-spacing: 0.1vmin;
+  line-height: 1.2;
+}
+
+.p-header__list-food::after {
+  content: "\A-食工房/ラウンジ-";
+  white-space: pre;
+  letter-spacing: 0.1vmin;
+  font-size: 1.05vmin;
+}
+
+.p-header__list-interactive {
+  color: #fff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  white-space: normal;
+  font-size: 1.75vmin;
+  letter-spacing: 0.1vmin;
+  line-height: 1.2;
+}
+
+.p-header__list-interactive::after {
+  content: "\A-体験プログラム-";
+  white-space: pre;
+  letter-spacing: 0.1vmin;
+  font-size: 1.05vmin;
+}
+
+.p-header__list-booking {
+  color: #fff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  white-space: normal;
+  font-size: 1.75vmin;
+  letter-spacing: 0.1vmin;
+  line-height: 1.2;
+}
+
+.p-header__list-booking::after {
+  content: "\A-ご予約-";
+  white-space: pre;
+  letter-spacing: 0.1vmin;
+  font-size: 1.05vmin;
+}
+
+.p-header--smh {
+  visibility: hidden;
+}
+
+@media (min-width: 1920px) {
+  .p-header__title {
+    font-size: 40px;
+  }
+  .p-header__title::before {
+    content: "\A暮らしの体験宿";
+    font-size: 23px;
+  }
+  .p-header__title::after {
+    content: "\A-Yakushima Lodge& Food Atelier-";
+    white-space: pre;
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+  .p-header__list {
+    padding-right: 4.0vmin;
+  }
+  .p-header__list-about {
+    color: #fff;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    white-space: normal;
+    font-size: 25px;
+    letter-spacing: 0.1vmin;
+    line-height: 1.2;
+  }
+  .p-header__list-about::after {
+    content: "\A-いろはのこと-";
+    white-space: pre;
+    letter-spacing: 0.1vmin;
+    font-size: 15px;
+  }
+  .p-header__list-lodge {
+    color: #fff;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    white-space: normal;
+    font-size: 25px;
+    letter-spacing: 0.1vmin;
+    line-height: 1.2;
+  }
+  .p-header__list-lodge::after {
+    content: "\A-宿泊ロッジ-";
+    white-space: pre;
+    letter-spacing: 0.1vmin;
+    font-size: 15px;
+  }
+  .p-header__list-food {
+    color: #fff;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    white-space: normal;
+    font-size: 25px;
+    letter-spacing: 0.1vmin;
+    line-height: 1.2;
+  }
+  .p-header__list-food::after {
+    content: "\A-食工房/ラウンジ-";
+    white-space: pre;
+    letter-spacing: 0.1vmin;
+    font-size: 15px;
+  }
+  .p-header__list-interactive {
+    color: #fff;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    white-space: normal;
+    font-size: 25px;
+    letter-spacing: 0.1vmin;
+    line-height: 1.2;
+  }
+  .p-header__list-interactive::after {
+    content: "\A-体験プログラム-";
+    white-space: pre;
+    letter-spacing: 0.1vmin;
+    font-size: 15px;
+  }
+  .p-header__list-booking {
+    color: #fff;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    white-space: normal;
+    font-size: 25px;
+    letter-spacing: 0.1vmin;
+    line-height: 1.2;
+  }
+  .p-header__list-booking::after {
+    content: "\A-ご予約-";
+    white-space: pre;
+    letter-spacing: 0.1vmin;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .p-header__list {
+    display: none;
+  }
+  .p-header__title {
+    font-size: 2.5vmin;
+    letter-spacing: 0.2vmin;
+    margin-top: 1.1vmin;
+    margin-left: 1.5vmin;
+    z-index: 1;
+  }
+  .p-header__title::after {
+    content: "\A-Yakushima Lodge& Food Atelier-";
+    white-space: pre;
+    font-size: 1.0vmin;
+    letter-spacing: 0.1vmin;
+    line-height: 2.7vmin;
+  }
+  .p-header__top {
+    height: 7vmin;
+  }
+  .p-header #p-header__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 1vmin;
+    left: 90%;
+    font-size: 8vmin;
+    cursor: pointer;
+    top: -0.5vmin;
+  }
+}
+
+@media (max-width: 375px) {
+  .p-header {
+    position: relative;
+  }
+  .p-header__list {
+    display: none;
+  }
+  .p-header__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16vmin;
+    width: 100%;
+  }
+  .p-header__logo {
+    position: absolute;
+    top: 70vmin;
+    left: 0;
+    background-size: cover;
+    width: 100vmin;
+    height: 50vmin;
+  }
+  .p-header__title {
+    font-size: 6vmin;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  .p-header__title::before {
+    font-size: 4vmin;
+  }
+  .p-header__title::after {
+    font-size: 1px;
+  }
+  .p-header--smh {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    visibility: visible;
+    width: 100%;
+  }
+  .p-header #p-header__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 1vmin;
+    left: 90%;
+    font-size: 8vmin;
+    cursor: pointer;
+    font-size: 13vmin;
+    position: absolute;
+    top: 0;
+    left: 85%;
+  }
+  .p-header__leave {
+    position: absolute;
+    left: 20%;
+  }
+  .p-header #mypng {
+    display: none;
+  }
+}
+
+.p-header__hide {
+  visibility: hidden;
+}
+
+.p-header__leave {
+  visibility: visible;
+}
+
+#p-header__icon {
+  float: right;
+  display: none;
+}
+
+.p-hidden {
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.p-hidden__home {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-hidden__list {
+  list-style: none;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.p-hidden__list-about {
+  color: #fff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  white-space: normal;
+  font-size: 1.9vmin;
+  letter-spacing: 0.1vmin;
+  line-height: 1.2;
+  font-family: "Toppan BunkyuMidashiMinStdN";
+}
+
+.p-hidden__list-about::after {
+  content: "\A-いろはのこと-";
+  white-space: pre;
+  letter-spacing: 0.1vmin;
+  font-size: 1.7vmin;
+}
+
+.p-hidden__list-lodge {
+  color: #fff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  white-space: normal;
+  font-size: 1.9vmin;
+  letter-spacing: 0.1vmin;
+  line-height: 1.2;
+  font-family: "Toppan BunkyuMidashiMinStdN";
+}
+
+.p-hidden__list-lodge::after {
+  content: "\A-宿泊ロッジ-";
+  white-space: pre;
+  letter-spacing: 0.1vmin;
+  font-size: 1.7vmin;
+}
+
+.p-hidden__list-food {
+  color: #fff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  white-space: normal;
+  font-size: 1.9vmin;
+  letter-spacing: 0.1vmin;
+  line-height: 1.2;
+  font-family: "Toppan BunkyuMidashiMinStdN";
+}
+
+.p-hidden__list-food::after {
+  content: "\A-食工房/ラウンジ-";
+  white-space: pre;
+  letter-spacing: 0.1vmin;
+  font-size: 1.7vmin;
+}
+
+.p-hidden__list-interactive {
+  color: #fff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  white-space: normal;
+  font-size: 1.9vmin;
+  letter-spacing: 0.1vmin;
+  line-height: 1.2;
+  font-family: "Toppan BunkyuMidashiMinStdN";
+}
+
+.p-hidden__list-interactive::after {
+  content: "\A-体験プログラム-";
+  white-space: pre;
+  letter-spacing: 0.1vmin;
+  font-size: 1.7vmin;
+}
+
+.p-hidden__list-booking {
+  color: #fff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  white-space: normal;
+  font-size: 1.9vmin;
+  letter-spacing: 0.1vmin;
+  line-height: 1.2;
+  font-family: "Toppan BunkyuMidashiMinStdN";
+}
+
+.p-hidden__list-booking::after {
+  content: "\A-ご予約-";
+  white-space: pre;
+  letter-spacing: 0.1vmin;
+  font-size: 1.7vmin;
+}
+
+.p-hidden__show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 375px) {
+  .p-hidden {
+    left: 20%;
+  }
+  .p-hidden__home {
+    margin-top: 55px;
+  }
+  .p-hidden__list-about {
+    margin-top: 55px;
+    color: #fff;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    white-space: normal;
+    font-size: 15px;
+    letter-spacing: 0.1vmin;
+    line-height: 1.2;
+    font-family: "Toppan BunkyuMidashiMinStdN";
+  }
+  .p-hidden__list-about::after {
+    white-space: pre;
+    letter-spacing: 0.1vmin;
+    font-size: 13px;
+  }
+  .p-hidden__list-lodge {
+    color: #fff;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    white-space: normal;
+    font-size: 15px;
+    letter-spacing: 0.1vmin;
+    line-height: 1.2;
+    font-family: "Toppan BunkyuMidashiMinStdN";
+  }
+  .p-hidden__list-lodge::after {
+    white-space: pre;
+    letter-spacing: 0.1vmin;
+    font-size: 13px;
+  }
+  .p-hidden__list-food {
+    color: #fff;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    white-space: normal;
+    font-size: 15px;
+    letter-spacing: 0.1vmin;
+    line-height: 1.2;
+    font-family: "Toppan BunkyuMidashiMinStdN";
+  }
+  .p-hidden__list-food::after {
+    white-space: pre;
+    letter-spacing: 0.1vmin;
+    font-size: 13px;
+  }
+  .p-hidden__list-interactive {
+    color: #fff;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    white-space: normal;
+    font-size: 15px;
+    letter-spacing: 0.1vmin;
+    line-height: 1.2;
+    font-family: "Toppan BunkyuMidashiMinStdN";
+  }
+  .p-hidden__list-interactive::after {
+    white-space: pre;
+    letter-spacing: 0.1vmin;
+    font-size: 13px;
+  }
+  .p-hidden__list-booking {
+    color: #fff;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    white-space: normal;
+    font-size: 15px;
+    letter-spacing: 0.1vmin;
+    line-height: 1.2;
+    font-family: "Toppan BunkyuMidashiMinStdN";
+  }
+  .p-hidden__list-booking::after {
+    white-space: pre;
+    letter-spacing: 0.1vmin;
+    font-size: 13px;
+  }
+  .p-hidden #p-hidden__facebookicon {
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    font-size: 9vmin;
+    padding-top: 2vmin;
+    padding-left: 4.5vmin;
+    padding-right: 1.5vmin;
+  }
+  .p-hidden #p-hidden__instagramicon {
+    font-size: 13vmin;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+  }
+  .p-hidden #p-hidden__closeicon {
+    color: #fff;
+    font-size: 16vmin;
+    position: absolute;
+    top: 0;
+    left: 80%;
+  }
+}
+
+#p-hidden__closeicon {
+  color: #fff;
+  font-size: 7vmin;
+  position: absolute;
+  top: 0;
+  left: 91%;
+  cursor: pointer;
+}
+
+#p-hidden__facebookicon {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 3.5vmin;
+  position: absolute;
+  padding-top: 4px;
+  padding-left: 7px;
+  padding-right: 3px;
+  top: 50%;
+  left: 73%;
+  cursor: pointer;
+}
+
+#p-hidden__instagramicon {
+  color: #fff;
+  font-size: 5vmin;
+  position: absolute;
+  top: 50%;
+  left: 87%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
