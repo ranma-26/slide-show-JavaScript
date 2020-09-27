@@ -25,37 +25,52 @@
   }); 
 }
 
+// 367px以上の画面スライドショー
+var myImage = new Array(	
+  "css/img/header.png",
+  "css/img/images2.png",		
+  "css/img/images3.png",		
+  "css/img/images4.png",		
+  "css/img/images5.png",		
+  "css/img/images6.png",		
+  );	
 
+  // 367px以下の画面スライドショー
+  var myImagesmh = new Array(	
+  "css/img/header-mini.png",
+  "css/img/images-mini2.png",		
+  "css/img/images-mini3.png",		
+  "css/img/images-mini4.png",		
+  );	
 
-var pics_src = new Array("css/img/header.png","css/img/images2.png","css/img/images3.png","css/img/images4.png","css/img/images5.png","css/img/images6.png");
-var mini_png = new Array("css/img/header-mini.png","css/img/images-mini2.png","css/img/images-mini3.png","css/img/images-mini4.png");
-var num = -1;
-var numb = -1;
-             slideshow_timer();
-            function slideshow_timer(){
-                if (num == 5){
-                    num = 0;
-                } 
-                else {
-                    num ++;
-                }
-                document.getElementById("mypng").src=pics_src[num];
-                
-                setTimeout("slideshow_timer()",1000); 
-            }
-          
+  var myNowCnt = -1;		/// 367px以上の画面スライドショー
+  var myNowCntsmh = -1;	
+  var myflg = 0;	
+  function myChange(){	// スライドショーメイン関数
 
-            // var numb = -1;
- 
-            // slideshow_timer();
- 
-            // function slideshow_timer(){
-            //     if (numb == 3){
-            //         numb = 0;
-            //     } 
-            //     else {
-            //         numb ++;
-            //     }
-            //     document.getElementById("mypng-smh").src=mini_png[numb];
-            //     setTimeout("slideshow_timer()",1000); 
-            // }            
+    myNowCnt = (myNowCnt<myImage.length-1) ? myNowCnt+1 : 0;	
+    myNowCntsmh = (myNowCntsmh<myImagesmh.length-1) ? myNowCntsmh+1 : 0;	
+    myflg = (myflg==0) ? 1 : 0;				
+ 		
+    if (myflg == 0){
+      document.getElementById("mypng").src = myImage[myNowCnt];		// 367px以上の画面スライドショー
+      document.getElementById("mypng-smh").src = myImagesmh[myNowCntsmh];		 // 367px以下の画面スライドショー
+
+      document.getElementById("mypng").className = "p-header__imagesSecond";		// 367px以上の画面スライドショー
+      document.getElementById("mypng-smh").className = "p-header--smhSecond";	 // 367px以下の画面スライドショー
+
+      document.getElementById("mypng-second").className = "p-header__images";	// 367px以上の画面スライドショー
+      document.getElementById("mypng-smhSecond").className = "p-header--smh";	 // 367px以下の画面スライドショー
+    }else{
+
+      document.getElementById("mypng-second").src = myImage[myNowCnt];		// 367px以上の画面スライドショー
+      document.getElementById("mypng-smhSecond").src = myImagesmh[myNowCntsmh];		 // 367px以下の画面スライドショー
+
+      document.getElementById("mypng").className = "p-header__images";// 367px以上の画面スライドショー
+      document.getElementById("mypng-smh").className = "p-header--smh";	 // 367px以下の画面スライドショー
+      document.getElementById("mypng-second").className = "p-header__imagesSecond";		// 367px以上の画面スライドショー
+      document.getElementById("mypng-smhSecond").className = "p-header--smhSecond";	 // 367px以下の画面スライドショー
+    }
+    setTimeout( "myChange()" , 10000 );		
+  }	
+  myChange(); 
