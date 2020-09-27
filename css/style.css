@@ -16,12 +16,25 @@
 }
 
 .p-header {
-  width: 100vw;
-  background-size: contain;
-  background-repeat: no-repeat;
   position: relative;
   color: #fff;
   font-family: "凸版文久見出し明朝";
+}
+
+.p-header__images {
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  position: absolute;
+}
+
+.p-header__imagesSecond {
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  position: absolute;
 }
 
 .p-header__top {
@@ -177,6 +190,10 @@
 }
 
 .p-header--smh {
+  visibility: hidden;
+}
+
+.p-header--smhSecond {
   visibility: hidden;
 }
 
@@ -342,12 +359,20 @@
     font-size: 1px;
   }
   .p-header--smh {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: absolute;
     visibility: visible;
     width: 100%;
+    opacity: 0;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .p-header--smhSecond {
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
   }
   .p-header #p-header__icon {
     display: -webkit-box;
@@ -367,7 +392,10 @@
     position: absolute;
     left: 20%;
   }
-  .p-header #mypng {
+  .p-header__images {
+    display: none;
+  }
+  .p-header__imagesSecond {
     display: none;
   }
 }
